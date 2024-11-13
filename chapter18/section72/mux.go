@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 	
-	"github.com/Imsyp/go_todo_app/chapter17/section72/handler"
-	"github.com/Imsyp/go_todo_app/chapter17/section72/store"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/handler"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/store"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"

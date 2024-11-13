@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/Imsyp/go_todo_app/chapter17/section72/config"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/config"
 )
 
 func main() {

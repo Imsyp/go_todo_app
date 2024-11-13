@@ -1,4 +1,4 @@
-module github.com/Imsyp/go_todo_app/chapter17/section72
+module github.com/Imsyp/go_todo_app/chapter18/section72
 
 go 1.23
 

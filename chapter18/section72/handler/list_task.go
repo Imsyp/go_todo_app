@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"github.com/Imsyp/go_todo_app/chapter17/section72/entity"
-	"github.com/Imsyp/go_todo_app/chapter17/section72/store"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/entity"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/store"
 )
 
 type ListTask struct {

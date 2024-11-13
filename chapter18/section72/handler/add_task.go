@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Imsyp/go_todo_app/chapter17/section72/entity"
-	"github.com/Imsyp/go_todo_app/chapter17/section72/store"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/entity"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/store"
 	"github.com/go-playground/validator/v10"
 )
 
