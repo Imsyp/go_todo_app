@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/Imsyp/go_todo_app/clock"
-	"github.com/Imsyp/go_todo_app/entity"
-	"github.com/Imsyp/go_todo_app/testutil"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/clock"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/entity"
+	"github.com/Imsyp/go_todo_app/chapter18/section72/testutil"
 	"github.com/google/go-cmp/cmp"
 	"github.com/jmoiron/sqlx"
 )
