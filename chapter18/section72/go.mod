@@ -17,6 +17,7 @@ require (
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/jessevdk/go-flags v1.6.1 // indirect
+	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/k0kubun/pp/v3 v3.2.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
