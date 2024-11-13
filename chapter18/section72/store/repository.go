@@ -12,7 +12,7 @@ import (
 )
 
 func New(ctx context.Context, cfg *config.Config) (*sqlx.DB, func(), error) {
-	// sqlx.Connect를 사용하면 내부에서 ping
+	// sqlx.Connect를 사용하면 내부에서 ping을 호출하여 연결을 확인한다.
 	db, err := sql.Open("mysql",
 		fmt.Sprintf(
 			"%s:%s@tcp(%s:%d)/%s?parseTime=true",
@@ -21,16 +21,16 @@ func New(ctx context.Context, cfg *config.Config) (*sqlx.DB, func(), error) {
 			cfg.DBName,
 		),
 	)
-	if err != nill {
-		return nill, func() {}, err
+	if err != nil {
+		return nil, func() {}, err
 	}
-	// Open은 실제로 접속 테스트는 하지 않는다.
+	// Open은 실제로 접속 테스트를 하지 않기 때문에 Ping을 사용하여 접속을 확인한다.
 	ctx, cancel := context.WithTimeout(ctx, 2*time.Second)
 	defer cancel()
 	if err := db.PingContext(ctx); err != nil {
-		return nil, func() { _ = db.CLose() }, err
+		return nil, func() { _ = db.Close() }, err
 	}
-	xdb := sqlx.NewDBb(db, "mysql")
+	xdb := sqlx.NewDb(db, "mysql")
 	return xdb, func() { _ = db.Close() }, nil
 }
 
