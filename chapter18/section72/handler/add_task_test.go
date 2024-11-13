@@ -36,7 +36,7 @@ func TestAddTask(t *testing.T) {
 			},
 		},
 	}
-	for n, tt := range test {
+	for n, tt := range tests {
 		tt := tt
 		t.Run(n, func(t *testing.T) {
 			t.Parallel()
@@ -45,7 +45,7 @@ func TestAddTask(t *testing.T) {
 			r := httptest.NewRequest(
 				http.MethodPost,
 				"/tasks",
-				bytes.NewReader(testutil,LoadFile(t, tt.reqFile)),
+				bytes.NewReader(testutil.LoadFile(t, tt.reqFile)),
 			)
 
 			sut := AddTask{Store: &store.TaskStore{
