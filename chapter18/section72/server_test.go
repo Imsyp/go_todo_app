@@ -24,7 +24,7 @@ func TestServer_Run(t *testing.T) {
 
 	eg.Go(func() error {
 		return run(ctx)
-		s := NewServer(1, mux)
+		s := NewServer(l, mux)
 		return s.Run(ctx)
 	})
 	in := "message"
