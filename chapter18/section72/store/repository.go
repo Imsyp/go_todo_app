@@ -3,10 +3,10 @@ package store
 import (
 	"context"
 	"database/sql"
-	"errors"
 	"fmt"
 	"time"
 
+	"github.com/Imsyp/go_todo_app/chapter18/section72/clock"
 	"github.com/Imsyp/go_todo_app/chapter18/section72/config"
 	"github.com/jmoiron/sqlx"
 )
