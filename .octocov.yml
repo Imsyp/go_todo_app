@@ -1,6 +1,6 @@
 coverage:
   paths:
-    - chapter15/section59/coverage.out
+    - chapter18/section72/coverage.out
 codeToTestRatio:
   code:
     - '**/*.go'
